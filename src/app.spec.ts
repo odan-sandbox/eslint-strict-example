@@ -1,8 +1,10 @@
+import { sum } from "./app";
+
 describe("app", (): void => {
-  describe("add", (): void => {
+  describe("sum", (): void => {
     it("should be correct", (): void => {
       expect.assertions(1);
-      expect(32 + 10).toBe(42);
+      expect(sum([1, 2, 3, 4, 5])).toBe(15);
     });
   });
 });

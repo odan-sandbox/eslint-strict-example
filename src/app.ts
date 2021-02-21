@@ -1,8 +1,7 @@
-async function main(): Promise<void> {
-  console.log("poyo");
+export function sum(values: number[]): number {
+  return values.reduce((prev, cur): number => prev + cur, 0);
 }
 
-main();
 
 process.on("unhandledRejection", (reason) => {
   console.error(reason);
